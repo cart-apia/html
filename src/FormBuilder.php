@@ -4,7 +4,7 @@ namespace Cartapia\Html;
 
 use BadMethodCallException;
 use DateTime;
-use Illuminate\Contracts\Routing\UrlGenerator;
+use Cartapia\Framework\Routing\UrlGenerator;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull;
@@ -31,7 +31,7 @@ class FormBuilder
     /**
      * The URL generator instance.
      *
-     * @var \Illuminate\Contracts\Routing\UrlGenerator
+     * @var \Cartapia\Framework\Routing\UrlGenerator
      */
     protected $url;
 
@@ -111,7 +111,7 @@ class FormBuilder
      * Create a new form builder instance.
      *
      * @param  \Cartapia\Html\HtmlBuilder               $html
-     * @param  \Illuminate\Contracts\Routing\UrlGenerator $url
+     * @param  \Cartapia\Framework\Routing\UrlGenerator $url
      * @param  \Illuminate\Contracts\View\Factory         $view
      * @param  string                                     $csrfToken
      * @param  Request                                    $request
