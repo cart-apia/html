@@ -1,6 +1,6 @@
 <?php
 
-namespace Collective\Html;
+namespace Cartapia\Html;
 
 use BadMethodCallException;
 use Illuminate\Support\HtmlString;

@@ -1,11 +1,11 @@
 {
-    "name": "laravelcollective/html",
-    "description": "HTML and Form Builders for the Laravel Framework",
+    "name": "cartapia/html",
+    "description": "HTML and Form Builders for the Cartapia Framework",
     "license": "MIT",
     "homepage": "https://laravelcollective.com",
     "support": {
-        "issues": "https://github.com/LaravelCollective/html/issues",
-        "source": "https://github.com/LaravelCollective/html"
+        "issues": "https://github.com/cart-apia/html/issues",
+        "source": "https://github.com/cart-apia/html"
     },
     "authors": [
         {
@@ -20,7 +20,6 @@
     "require": {
         "php": ">=7.2.5",
         "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
-        "illuminate/routing": "^6.0|^7.0|^8.0|^9.0",
         "illuminate/session": "^6.0|^7.0|^8.0|^9.0",
         "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
         "illuminate/view": "^6.0|^7.0|^8.0|^9.0"
@@ -32,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Collective\\Html\\": "src/"
+            "Cartapia\\Html\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -44,11 +43,11 @@
         },
         "laravel": {
             "providers": [
-                "Collective\\Html\\HtmlServiceProvider"
+                "Cartapia\\Html\\HtmlServiceProvider"
             ],
             "aliases": {
-                "Form": "Collective\\Html\\FormFacade",
-                "Html": "Collective\\Html\\HtmlFacade"
+                "Form": "Cartapia\\Html\\FormFacade",
+                "Html": "Cartapia\\Html\\HtmlFacade"
             }
         }
     },
