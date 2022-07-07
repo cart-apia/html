@@ -1297,8 +1297,8 @@ class FormBuilder
         }
 
         if (function_exists('app')) {
-            $hasNullMiddleware = app("Illuminate\Contracts\Http\Kernel")
-                ->hasMiddleware(ConvertEmptyStringsToNull::class);
+            $hasNullMiddleware = false;/* app("Illuminate\Contracts\Http\Kernel")
+                ->hasMiddleware(ConvertEmptyStringsToNull::class) */;
 
             if ($hasNullMiddleware
                 && is_null($old)
