@@ -1,6 +1,6 @@
 <?php
 
-namespace Collective\Html;
+namespace Cartapia\Html;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
@@ -31,7 +31,7 @@ class HtmlServiceProvider extends ServiceProvider implements DeferrableProvider
         $this->app->alias('html', HtmlBuilder::class);
         $this->app->alias('form', FormBuilder::class);
 
-        $this->registerBladeDirectives();
+        //$this->registerBladeDirectives();
     }
 
     /**
@@ -65,7 +65,7 @@ class HtmlServiceProvider extends ServiceProvider implements DeferrableProvider
      *
      * @return void
      */
-    protected function registerBladeDirectives()
+    /*protected function registerBladeDirectives()
     {
         $this->app->afterResolving('blade.compiler', function (BladeCompiler $bladeCompiler) {
             $namespaces = [
@@ -86,7 +86,7 @@ class HtmlServiceProvider extends ServiceProvider implements DeferrableProvider
                 }
             }
         });
-    }
+    }*/
 
     /**
      * Get the services provided by the provider.

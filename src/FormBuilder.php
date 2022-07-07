@@ -1,6 +1,6 @@
 <?php
 
-namespace Collective\Html;
+namespace Cartapia\Html;
 
 use BadMethodCallException;
 use DateTime;
@@ -24,7 +24,7 @@ class FormBuilder
     /**
      * The HTML builder instance.
      *
-     * @var \Collective\Html\HtmlBuilder
+     * @var \Cartapia\Html\HtmlBuilder
      */
     protected $html;
 
@@ -110,7 +110,7 @@ class FormBuilder
     /**
      * Create a new form builder instance.
      *
-     * @param  \Collective\Html\HtmlBuilder               $html
+     * @param  \Cartapia\Html\HtmlBuilder               $html
      * @param  \Illuminate\Contracts\Routing\UrlGenerator $url
      * @param  \Illuminate\Contracts\View\Factory         $view
      * @param  string                                     $csrfToken
@@ -1297,8 +1297,8 @@ class FormBuilder
         }
 
         if (function_exists('app')) {
-            $hasNullMiddleware = app("Illuminate\Contracts\Http\Kernel")
-                ->hasMiddleware(ConvertEmptyStringsToNull::class);
+            $hasNullMiddleware = false;/* app("Illuminate\Contracts\Http\Kernel")
+                ->hasMiddleware(ConvertEmptyStringsToNull::class) */;
 
             if ($hasNullMiddleware
                 && is_null($old)

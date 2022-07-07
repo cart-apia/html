@@ -1,11 +1,11 @@
 <?php
 
-namespace Collective\Html;
+namespace Cartapia\Html;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Collective\Html\FormBuilder
+ * @see \Cartapia\Html\FormBuilder
  */
 class FormFacade extends Facade
 {
