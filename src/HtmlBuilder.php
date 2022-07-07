@@ -6,7 +6,7 @@ use BadMethodCallException;
 use Illuminate\Support\HtmlString;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\Traits\Macroable;
-use Illuminate\Contracts\Routing\UrlGenerator;
+use Cartapia\Framework\Routing\UrlGenerator;
 
 class HtmlBuilder
 {
@@ -18,7 +18,7 @@ class HtmlBuilder
     /**
      * The URL generator instance.
      *
-     * @var \Illuminate\Contracts\Routing\UrlGenerator
+     * @var \Cartapia\Framework\Routing\UrlGenerator
      */
     protected $url;
 
@@ -32,7 +32,7 @@ class HtmlBuilder
     /**
      * Create a new HTML builder instance.
      *
-     * @param \Illuminate\Contracts\Routing\UrlGenerator $url
+     * @param \Cartapia\Framework\Routing\UrlGenerator $url
      * @param \Illuminate\Contracts\View\Factory         $view
      */
     public function __construct(UrlGenerator $url = null, Factory $view)
